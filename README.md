@@ -204,3 +204,41 @@ Generated outputs:
   > Hierarchical attention improves explanation quality
 
 ---
+---
+
+## Project Structure
+
+```text
+XAI_swin/
+├── .idea/                           # IDE configuration directory
+├── .lightning_studio/               # Lightning Studio configuration
+├── .vscode/                         # VS Code configuration
+├── .cursor-server                   # Cursor IDE server symlink
+├── .vscode-server                   # VS Code server symlink
+├── .windsurf-server                 # Windsurf server symlink
+├── .wget-hsts                       # Wget HSTS file
+│
+├── data/                            # Data directory
+│   ├── CUB_200_2011/               # CUB dataset (Caltech-UCSD Birds)
+│   └── attributes.txt              # Attribute definitions
+│
+├── scikit_learn_data/              # Machine learning datasets
+│   └── 20news-bydate_py3.pkz       # 20 newsgroups dataset
+│
+├── README.md                        # Project documentation
+├── main.py                          # Main entry point
+├── Untitled.ipynb                   # Jupyter notebook for analysis
+│
+├── Model Weights (PyTorch):
+│   ├── pcam_best.pth               # Best model checkpoint
+│   ├── pcam_swin.pth               # Swin Transformer model
+│   └── pcam_vit.pth                # Vision Transformer model
+│
+├── Results Visualization:
+│   ├── result1_accuracy.png        # Accuracy comparison results
+│   ├── result2_attention_maps.png  # Attention map visualizations
+│   ├── result3_faithfulness.png    # Faithfulness metrics
+│   ├── phase3_result1_accuracy.png
+│   ├── phase3_result2_attn_maps.png
+│   ├── phase3_result3_faithfulness.png
+│   └── phase3_result4_sharpness.png
